@@ -4,30 +4,23 @@
   
     
     <entry>
-      <title>测试笔记</title>
-      <link href="/post/739743b5.html"/>
-      <url>/post/739743b5.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>第一篇文章</title>
+      <title>梦开始的地方</title>
       <link href="/post/5c2fafc7.html"/>
       <url>/post/5c2fafc7.html</url>
       
-        <content type="html"><![CDATA[<h1 id="个人知识库的搭建"><a href="#个人知识库的搭建" class="headerlink" title="个人知识库的搭建"></a>个人知识库的搭建</h1><p>目的：分享一些技术知识，自己知识库的整理和完善</p><p><img src="https://electrliang-image.oss-cn-zhangjiakou.aliyuncs.com/img/wallhaven-5g7ew7.jpg"></p><h1 id="几个常见命令"><a href="#几个常见命令" class="headerlink" title="几个常见命令"></a>几个常见命令</h1><p><code>hexo clean  clean</code></p><p><code>hexo g        生成</code></p><p><code>hexo s        本地预览</code></p><p><code>hexo d        发布</code></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="个人知识库的搭建"><a href="#个人知识库的搭建" class="headerlink" title="个人知识库的搭建"></a>个人知识库的搭建</h1><p><strong>目的：</strong>分享一些技术知识、文章，并对自己知识库进行整理和完善。</p><p><strong>搭建方式：</strong>基于GitHub的pages功能，利用hexo框架butterfly主题进行搭建，搭建过程中接触学习了一些前端知识。</p><p><strong>更新方向：</strong>电子设计、编程学习、嵌入式开发、效率工具、创意想法等技术文章。</p><p><strong>未来展望</strong>：基于个人知识库温故知新、交流学习，早日成为全栈大佬😆</p>]]></content>
       
+      
+      <categories>
+          
+          <category> 其他 </category>
+          
+      </categories>
       
       
         <tags>
             
-            <tag> 其他 </tag>
+            <tag> 初心 </tag>
             
         </tags>
       
