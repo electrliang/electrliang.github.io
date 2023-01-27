@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>如何优雅的记笔记</title>
+      <link href="/post/5e00b85e.html"/>
+      <url>/post/5e00b85e.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="如何优雅的记笔记——耗时（摸鱼）2天打造自己的工作流"><a href="#如何优雅的记笔记——耗时（摸鱼）2天打造自己的工作流" class="headerlink" title="如何优雅的记笔记——耗时（摸鱼）2天打造自己的工作流"></a>如何优雅的记笔记——耗时（摸鱼）2天打造自己的工作流</h1><h3 id="我的方案："><a href="#我的方案：" class="headerlink" title="我的方案："></a>我的方案：</h3><ul><li>使用Typora作为笔记软件<ul><li>优点：支持Markdown语法，便于书写，及时渲染直观。</li><li>缺点：不支持多设备，移动端无法查看笔记，同时不便于笔记的分享。（由于typora中使用markdown语法仅保存图片链接，因此分享时必须连同图片文件夹一起分享，或导出pdf等格式，十分不优雅~）</li></ul></li></ul><h3 id="解决方案1-0："><a href="#解决方案1-0：" class="headerlink" title="解决方案1.0："></a>解决方案1.0：</h3><ul><li>使用gitee提供云服务，将整个笔记文件夹上传到gitee的仓库中，方便进行多设备查看<ul><li>优点：利用gitee提供的仓库，实现笔记的云同步，方便在移动端查看和分享笔记。同时支持版本控制。</li><li>缺点：每次写完笔记还要进入到git命令行界面，进行git add、git commit、git push等一系列git操作。同时笔记中的图片如果较多的话占用仓库资源。</li></ul></li></ul><h3 id="解决方案2-0："><a href="#解决方案2-0：" class="headerlink" title="解决方案2.0："></a>解决方案2.0：</h3><ul><li>采用PicGo+阿里云对象存储oss搭建图床<ul><li>优点：使上传gitee仓库的笔记为纯文本，不包含图片资源仅包含图片的云链接，解决资源占用同时，更加便于笔记的分享。</li><li>缺点:阿里云对象存储oss需要付费（还好不贵）标准版还可以当私人网盘使用，绝对不亏。</li></ul></li></ul><h3 id="解决方案3-0："><a href="#解决方案3-0：" class="headerlink" title="解决方案3.0："></a>解决方案3.0：</h3><ul><li>利用python脚本实现笔记的自动推送</li></ul><p>​最开始想使用python标准模块OS的system() 方法实现，system() 可以将以字符串形式作为参数的git指令执行在命令行中，但是发现使用os.system和subprocess.call的时候都会有一闪而过的黑框（十分不优雅~），于是多方百度，使用os.popen后台执行很方便，不显示黑框，对于结果也有好处理的方式。可以替代os.system()函数。为了增强交互性，我在代码中又增加了获取时间作为commit的备注信息，并将推送（暂且称之为云同步）的结果以弹窗形式显示在桌面上。这里要import win32api,win32con，有一点小坑，耽误了较多时间。一切写好之后便可以封装为exe，放入笔记目录下了。最后在Windows任务计划程序中，将exe作为定时程序运行，这样就可以优雅的记笔记啦。</p><p><img src="https://electrliang-image.oss-cn-zhangjiakou.aliyuncs.com/img/image-20221017002607802.png" alt="image-20221017002607802"></p><p><img src="https://electrliang-image.oss-cn-zhangjiakou.aliyuncs.com/img/image-20221017003131881.png" alt="image-20221017003131881"></p><p>​python的脚本比较简单，好多bug还没有完善，但可以满足基本的使用需求，日后有时间再进行改进，代码放在上边，需要自取。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 效率工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 摸鱼 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>梦开始的地方</title>
       <link href="/post/5c2fafc7.html"/>
       <url>/post/5c2fafc7.html</url>
